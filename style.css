@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header h1 {
+    color: #722f80;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #722f80;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: thistle;
+    height: 60vh;
+}
+
+
+.hero-text {
+    flex: 1; /* Reduce the width of the text section */
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: #722f80;
+}
+
+.hero-text h2 span {
+    color: #ff4081;
+}
+
+.hero-text select,
+.hero-text button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    flex: 1; /* Increase the width of the image section */
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.destinations {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.destination-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: thistle;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom */
+}
+
+.destination-item img:hover {
+    transform: scale(1.1); /* Zoom the image on hover */
+}
+
+
+
+.destination-item h4 {
+    font-size: 20px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.destination-item h5 {
+    font-size: 16px;
+    color: gray;
+    margin: 5px 0;
+}
+
+
+
+.destination-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #722f80;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.destination-item a:hover {
+    background-color: #ff4081;
+}
+
+.contact-us {
+    background-image: url(OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 60%;
+}
+
+.contact-us h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #722f80;
+    box-shadow: 0 0 5px rgba(114, 47, 128, 0.5);
+    outline: none;
+}
+
+.submit-button {
+    background-color: #722f80;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(114, 47, 128, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff4081;
+    box-shadow: 0 8px 15px rgba(255, 64, 129, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(2px);
+}
+
